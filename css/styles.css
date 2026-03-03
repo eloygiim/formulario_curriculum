@@ -1,0 +1,226 @@
+/*Para toda la página*/
+body{
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    
+    /*Para que no ocupe todo*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+p {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 10px 0px 20px 0px;
+    text-align: justify;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+strong{
+    font-weight: 600;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h2{
+    display: block;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 5px 0px 20px 0px;
+}
+
+h4{
+    display: block;
+    margin: 5px 0px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h5{
+    display: block;
+    margin: 5px 0px;
+    font-weight: 400;
+    font-style: italic;
+}
+.menu-nav{
+    padding: 0px 0px 10px 0px;
+}
+
+.menu-nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0px 5px;
+    gap: 20px;
+    color: black;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.menu-nav ul li a:hover{
+    color: #777;
+}
+
+header div img{
+    width: 100px;
+    border-radius: 100%;
+}
+
+/*  En un principio ocupaba el 50% pero al hacer el body más estrecho se ve mejor que ocupe todo el ancho
+    width: 50%;
+    padding: 0px 20px;
+}
+*/
+
+.item-flex{
+    min-width: 30%;
+    flex: 1 1 300px;
+}
+
+/*Ya no hace falta porque cada sección tiene la clase item-flex y se adapta a su contenido, pero lo dejo comentado por si acaso
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+*/
+
+#flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+/* Texto en cursiva */
+.cursiva{
+    font-style: italic;
+}
+
+.puestos{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/*Aquí empieza todo lo del formulario*/
+/*Lo he hecho de un ancho parecido al de las columnas de las tarjetas para formato ordenador*/
+form{
+    font-size: 16px;
+    max-width: 350px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 5px 10px 25px rgba(15, 23, 42, 0.1);
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.33rem;
+    margin-bottom: 1rem;
+}
+
+label{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #222;
+}
+
+
+input, textarea, select{
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    border-color: #6682e5;
+    box-shadow: 0 0 2px 3px rgba(184, 184, 243, 0.2);
+}
+
+/*
+Para que marque cuando es valido o no pero es excesivo y distrae por eso lo comento
+input:valid, textarea:valid, select:valid{
+    outline: none;
+    border-color: #65d367;
+    box-shadow: 0 0 2px 3px rgba(184, 243, 189, 0.2);
+}
+
+input:invalid, textarea:invalid, select:invalid{
+    outline: none;
+    border-color: #d36565;
+    box-shadow: 0 0 2px 3px rgba(243, 184, 184, 0.2);
+}
+*/
+
+/*Para que los textos del placeholder se vean con la misma tipografía que el resto de la página y en cursiva*/
+textarea::placeholder, input::placeholder{
+    font-family:  Helvetica, Arial, sans-serif;
+    font-style: italic;
+}
+
+/*No me gustaban los botones uno arriba del otro*/
+.flex-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    font-size: 0.8rem;
+}
+
+button[type="submit"]{
+    margin: 0.5rem auto;
+    width: 35%;
+    padding: 0.4rem 0.6rem;
+    background-color: rgb(5, 148, 31);
+    color: #FFF;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+button[type="submit"]:hover{                                                                                                                                                                                                                                                                                                                             
+    background-color: rgb(86, 202, 107);
+}
+
+button[type="reset"]{
+    margin: 0.5rem auto;
+    width: 35%;
+    padding: 0.4rem 0.6rem;
+    background-color: rgb(206, 141, 0);
+    color: #FFF;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+button[type="reset"]:hover{
+    background-color: rgb(233, 188, 90);
+}

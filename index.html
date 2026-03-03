@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Curriculum semántico de Eloy Giménez con estilos aplicados">
+        <title>Curriculum Semantico Eloy Giménez</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h2>Eloy Giménez Solano</h2>
+                <nav class="menu-nav">
+                <ul>
+                    <li><a href="#Sobre-mi">Sobre mi</a></li>
+                    <li><a href="#Experiencia">Experiencia</a></li>
+                    <li><a href="#Educacion">Educación</a></li>
+                    <li><a href="#Habilidades">Habilidades</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div>
+                <img src="imagenes/fotoeloy.jpg" alt="Foto de Eloy">
+            </div>
+        </header>
+
+        <main>
+            <section id="Sobre-mi"> <!--Sobre mi-->
+                <article>
+                    <h3>Sobre mi</h3>
+                    <p>Me presento, soy Eloy Giménez, tengo 21 años, nací en València, donde he vivido toda mi vida, siendo la ciudad que amo. Actualmente me encuentro en el segundo curso de Diseño Gráfico en la Universiad Europea de Valencia. Mis mayores aficiones son el fútbol y la música, siendo fiel aficionado y socio abonado al Valencia CF desde el 2014. También sé tocar el trombón, la percusión y la guitarra, formando parte de la Agrupación Musical Patraix desde los 6 años.</p>
+                </article> 
+            </section>
+            <div id="flex">
+                <section class="item-flex" id="Experiencia"> <!--Experiencia-->
+                    <article class="titular-section">
+                        <h3>Experiencia</h3>
+                    </article>
+                    <article>
+                        <article class="puestos">
+                            <h4>Estudio Designalia</h4>
+                            <h5>2023 - 2024</h5>
+                        </article>
+                        <p>
+                            Trabajo como diseñador gráfico freelance para esta empresa de diseño de interiores. Mis funciones eran la <strong>creación de logotipos</strong>, <strong>diseño de catálogos</strong> y <strong>creación de material publicitario</strong>.
+                        </p>
+                    </article>
+
+                    <article>
+                        <article class="puestos">
+                            <h4>Belmar</h4>
+                            <h5>2022 - 2023</h5>
+                        </article>
+                        <p>
+                            Trabajo en tienda física de fotografía donde desarrollé funciones como <strong>asistente de cámara</strong>, <strong>control de iluminación</strong>  y <strong>atención al cliente</strong>.
+                        </p>
+                    </article>
+                    <article>
+                        <article class="puestos">
+                            <h4>Bar Manolo</h4>
+                            <h5>2021 - 2022</h5>
+                        </article>
+                        <p>
+                            Trabajo de camarero en verano. Mis funciones eran la <strong>atención al cliente</strong>, el <strong>servicio de bebidas</strong> y el <strong>mantenimiento del local</strong>.
+                        </p>
+                    </article>  
+                </section>
+                <section class="item-flex" id="Educacion"> <!--Educacion-->
+                    <article>
+                        <h3>Educación</h3>
+                    </article>
+                    <article>
+                        <h4>Grado de Diseño Gráfico y Tecnología Creativas</h4>
+                        <p>
+                            <em> 2024 - Actualidad </em>en la Universidad Europea de Valencia.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Técnico Superior en Diseño y Edición de Publicaciones Impresas y Multimedia</h4>
+                        <p>
+                            <em>2022 - 2024</em> en el CIPFP Ciutat de l'Aprenent.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Técnico en Preimpresión Digital</h4>
+                        <p>
+                            <em>2020 - 2022</em> en el CIPFP Ciutat de l'Aprenent.
+                        </p>
+                    </article> 
+                </section>
+                <section class="item-flex" id="Habilidades"> <!--Habilidades-->
+                    <article>
+                        <h3>Habilidades</h3>
+                    </article>
+                    <article>
+                        <h4>Illustrator</h4>
+                        <p>
+                            Manejo avanzado de Adobe Illustrator para la creación de logotipos, ilustraciones y gráficos vectoriales.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Photoshop</h4>
+                        <p>
+                            Manejo avanzado de Adobe Photoshop para la edición y retoque de imágenes, así como para la creación de composiciones visuales.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>InDesign</h4>
+                        <p>
+                            Manejo avanzado de Adobe InDesign para la maquetación y diseño de publicaciones impresas y digitales.
+                        </p>
+                    </article>
+                </section>
+            </div>
+            <form action="contacto.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="formName" placeholder="Nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="Tu email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Teléfono de empresa</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Teléfono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo_enrevista">Tipo de reunión</label>
+                   <select name="tipo_entrevista" id="tipo_entrevista" required>
+                        <option value="" selected>Elegir</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="online">Online (videollamada)</option>
+                        <option value="llamada">Llamada telefónica inicial</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha aproximada de contacto</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Información adicional</label>
+                    <textarea name="mensaje" id="mensaje" cols="40" rows="4" placeholder="Escribe cualquier información adicional"></textarea>
+                </div>
+                    
+                <div class="form-group">
+                    <label for="urgent">Nivel de urgencia (1-5)</label>
+                    <input type="range" name="urgent" id="urgent" min="1" max="5">
+
+                </div>
+                    
+                <div class="flex-btns">
+                    <button type="submit">Enviar form</button>
+                    <button type="reset">Reiniciar</button>
+                </div>
+
+            </form>
+           
+        </main>
+    
+    </body>
+</html>
